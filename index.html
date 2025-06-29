@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vamshi Burgula | MERN Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              code: ["Fira Code", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Fira Code", monospace;
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-white via-blue-50 to-teal-50 text-gray-800 dark:from-[#0f172a] dark:via-[#1e293b] dark:to-[#0f172a] dark:text-white transition-colors duration-500"
+  >
+    <!-- Theme Toggle -->
+    <div class="fixed top-4 right-4 z-50">
+      <button
+        id="theme-toggle"
+        class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-white px-3 py-2 rounded-full shadow-md hover:shadow-lg"
+      >
+        🌞/🌙
+      </button>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="sticky top-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm border-b border-gray-200 dark:border-gray-700"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-blue-600 dark:text-cyan-400 text-xl font-bold">
+          Vamshi Burgula
+        </div>
+        <ul class="flex gap-6 text-sm md:text-base">
+          <li>
+            <a
+              href="#about"
+              class="hover:text-blue-600 dark:hover:text-cyan-400 transition"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="hover:text-blue-600 dark:hover:text-cyan-400 transition"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#internships"
+              class="hover:text-blue-600 dark:hover:text-cyan-400 transition"
+              >Internships</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="hover:text-blue-600 dark:hover:text-cyan-400 transition"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="hover:text-blue-600 dark:hover:text-cyan-400 transition"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-6 py-20 gap-10"
+    >
+      <div class="md:w-1/2" data-aos="fade-right">
+        <h1 class="text-4xl font-bold text-blue-600 dark:text-cyan-400 mb-4">
+          Hi, I'm
+          <span class="text-teal-600 dark:text-emerald-400">Vamshi</span>
+        </h1>
+        <p class="text-lg text-gray-700 dark:text-gray-300">
+          A passionate <strong>MERN Stack Developer</strong> and
+          <strong>Cybersecurity Enthusiast</strong> with hands-on experience in
+          building full-stack applications and implementing secure solutions.
+        </p>
+        <a
+          href="resume.pdf"
+          target="_blank"
+          class="inline-block mt-6 px-6 py-2 bg-blue-600 dark:bg-cyan-600 hover:bg-blue-700 dark:hover:bg-cyan-700 text-white rounded-lg shadow"
+          >View Resume</a
+        >
+      </div>
+      <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+        <img
+          src="vamshi.jpg"
+          alt="Vamshi Burgula"
+          class="w-52 h-52 md:w-64 md:h-64 rounded-full border-4 border-blue-300 dark:border-cyan-400 shadow-lg object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-7xl mx-auto px-6 py-16">
+      <h2
+        class="text-3xl font-bold text-center text-blue-600 dark:text-cyan-400 mb-10"
+        data-aos="fade-up"
+      >
+        Tech Stack & Skills
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Languages
+          </h3>
+          <p>C++, JavaScript, Python, Java</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Frontend
+          </h3>
+          <p>React, HTML5, CSS3, Tailwind</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Backend
+          </h3>
+          <p>Node.js, Express.js</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Databases
+          </h3>
+          <p>MongoDB, MySQL</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Security
+          </h3>
+          <p>JWT, AES-256, OAuth</p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Tools
+          </h3>
+          <p>Git, VS Code, Postman, Linux</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internships" class="max-w-7xl mx-auto px-6 py-16">
+      <h2
+        class="text-3xl font-bold text-center text-blue-600 dark:text-cyan-400 mb-10"
+        data-aos="fade-up"
+      >
+        Internship Experience
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="fade-right"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Poditivity (2024–2025)
+          </h3>
+          <p>
+            Developed cross-platform React Native apps with Apollo Client and
+            GraphQL. Built institutional dashboards and dynamic UI for
+            student-teacher interaction.
+          </p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="fade-left"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            DRDL Hyderabad (2024)
+          </h3>
+          <p>
+            Worked with the MERN stack to improve performance by 30%, built RBAC
+            modules, and enhanced frontend responsiveness and visual
+            accessibility.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-16">
+      <h2
+        class="text-3xl font-bold text-center text-blue-600 dark:text-cyan-400 mb-10"
+        data-aos="fade-up"
+      >
+        Projects
+      </h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="flip-left"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Encrypted Keylogger System
+          </h3>
+          <p class="mb-2">
+            Built a full-stack monitoring tool using AES-256 encryption and
+            SHA-256 hash validation. Includes role-based dashboards and alert
+            features.
+          </p>
+          <a
+            href="https://github.com/vamshiburgula/mern_login-app-for_keylogger"
+            class="text-blue-600 dark:text-cyan-400 underline"
+            target="_blank"
+            >GitHub ↗</a
+          >
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-6 rounded-xl border border-blue-100 dark:border-gray-700 shadow-md"
+          data-aos="flip-right"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 text-xl mb-2">
+            Master of Coin
+          </h3>
+          <p class="mb-2">
+            An intuitive finance tracker with category filters, Chart.js-based
+            dashboards, and responsive UI. Tracks income and expenses
+            effectively.
+          </p>
+          <a
+            href="https://github.com/vamshiburgula/MasterofCoinFinal"
+            class="text-blue-600 dark:text-cyan-400 underline"
+            target="_blank"
+            >GitHub ↗</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-16">
+      <h2
+        class="text-3xl font-bold text-center text-blue-600 dark:text-cyan-400 mb-10"
+        data-aos="fade-up"
+      >
+        Contact
+      </h2>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 text-center">
+        <div
+          class="bg-white dark:bg-gray-800 p-4 rounded-xl border border-blue-100 dark:border-gray-700 shadow-sm"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 font-medium mb-1">
+            Email
+          </h3>
+          <p>
+            <a
+              href="mailto:vamshiburgula1609@gmail.com"
+              class="text-blue-600 dark:text-cyan-400"
+              >vamshiburgula1609@gmail.com</a
+            >
+          </p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-4 rounded-xl border border-blue-100 dark:border-gray-700 shadow-sm"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 font-medium mb-1">
+            LinkedIn
+          </h3>
+          <p>
+            <a
+              href="https://linkedin.com/in/vamshiburgula"
+              target="_blank"
+              class="text-blue-600 dark:text-cyan-400"
+              >linkedin.com/in/vamshiburgula</a
+            >
+          </p>
+        </div>
+        <div
+          class="bg-white dark:bg-gray-800 p-4 rounded-xl border border-blue-100 dark:border-gray-700 shadow-sm"
+          data-aos="zoom-in"
+        >
+          <h3 class="text-teal-600 dark:text-emerald-400 font-medium mb-1">
+            GitHub
+          </h3>
+          <p>
+            <a
+              href="https://github.com/vamshiburgula"
+              target="_blank"
+              class="text-blue-600 dark:text-cyan-400"
+              >github.com/vamshiburgula</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-gray-500 dark:text-gray-400 py-6 border-t border-gray-200 dark:border-gray-700 mt-16"
+    >
+      &copy; 2025 Vamshi Burgula — Built with Tailwind CSS, AOS & MERN Stack
+      ☀️🌙
+    </footer>
+
+    <script>
+      AOS.init({ duration: 800, once: true });
+      const themeToggle = document.getElementById("theme-toggle");
+      const root = document.documentElement;
+      if (localStorage.getItem("theme") === "dark") root.classList.add("dark");
+      themeToggle.addEventListener("click", () => {
+        root.classList.toggle("dark");
+        localStorage.setItem(
+          "theme",
+          root.classList.contains("dark") ? "dark" : "light"
+        );
+      });
+    </script>
+  </body>
+</html>
