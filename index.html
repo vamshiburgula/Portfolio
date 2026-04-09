@@ -183,55 +183,81 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="py-24 px-6">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-2xl font-semibold mb-16 text-center" data-aos="fade-up">
-      Projects
-    </h2>
+<div class="grid md:grid-cols-2 gap-6">
 
-    <div class="grid md:grid-cols-2 gap-6">
-
-      <div class="card p-6" data-aos="fade-up">
-        <h3 class="font-medium mb-2">
-          Client-Side Encrypted Activity Monitoring System
-        </h3>
-        <p class="text-sm text-gray-400 mb-4 leading-relaxed">
-          Full-stack MERN application designed to securely collect and
-          visualize user activity data in a controlled academic
-          environment. Implemented client-side AES-256 encryption and
-          SHA-256 hashing to ensure sensitive data was never stored or
-          transmitted in plaintext. Built JWT-based authentication with
-          role-based dashboards and real-time monitoring views.
-        </p>
-        <a href="https://github.com/vamshiburgula/mern_login-app-for_keylogger"
-           target="_blank"
-           class="text-node text-sm">
-          View on GitHub →
-        </a>
-      </div>
-
-      <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="font-medium mb-2">
-          Live Real-Time Polling Platform
-        </h3>
-        <p class="text-sm text-gray-400 mb-4 leading-relaxed">
-          Real-time polling platform allowing users to create polls and
-          vote with instant result updates. Implemented WebSocket-based
-          communication to synchronize votes across concurrent clients.
-          Designed a responsive React and Tailwind CSS interface and
-          built RESTful backend services using Node.js and Express.
-          Deployed on Vercel for production use.
-        </p>
-        <a href="https://menti-polling-system.vercel.app/"
-           target="_blank"
-           class="text-node text-sm">
-          View Live Demo →
-        </a>
-      </div>
-
-    </div>
+  <!-- FINANCE DASHBOARD (MAIN PROJECT) -->
+  <div class="card p-6">
+    <h3 class="font-medium mb-2">
+      Finance Dashboard Backend System
+    </h3>
+    <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+      Built a secure backend system for finance data management with JWT-based authentication (access + refresh tokens) and email verification flow using hashed tokens.
+      Designed and enforced role-based access control (RBAC) at both middleware and database query levels, preventing unauthorized data access and privilege escalation.
+      Developed REST APIs for financial records with filtering, search, and pagination, supporting scalable querying across large datasets.
+      Implemented MongoDB aggregation pipelines to generate dashboard insights including total income/expense, category-wise breakdown, and monthly trends.
+      Introduced soft delete strategy to retain historical data while ensuring inactive records are excluded from active queries.
+      Applied rate limiting and input validation to protect APIs against abuse and invalid data, improving system reliability.
+    </p>
+    <a href="https://github.com/vamshiburgula/finance-dashboard/"
+       target="_blank"
+       class="text-node text-sm">
+      View on GitHub →
+    </a>
   </div>
-</section>
+
+  <!-- KEYLOGGER SYSTEM -->
+  <div class="card p-6">
+    <h3 class="font-medium mb-2">
+      Client-Side Encrypted Activity Monitoring System
+    </h3>
+    <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+      Full-stack MERN application designed to securely collect and visualize user activity data in a controlled academic environment.
+      Implemented client-side AES-256 encryption and SHA-256 hashing to ensure sensitive data was never stored or transmitted in plaintext.
+      Built JWT-based authentication with role-based dashboards and real-time monitoring views.
+    </p>
+    <a href="https://github.com/vamshiburgula/mern_login-app-for_keylogger"
+       target="_blank"
+       class="text-node text-sm">
+      View on GitHub →
+    </a>
+  </div>
+
+  <!-- REAL-TIME POLLING -->
+  <div class="card p-6">
+    <h3 class="font-medium mb-2">
+      Live Real-Time Polling Platform
+    </h3>
+    <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+      Real-time polling platform allowing users to create polls and vote with instant result updates.
+      Implemented WebSocket-based communication to synchronize votes across concurrent clients.
+      Designed a responsive React and Tailwind CSS interface and built RESTful backend services using Node.js and Express.
+      Deployed on Vercel for production use.
+    </p>
+    <a href="https://menti-polling-system.vercel.app/"
+       target="_blank"
+       class="text-node text-sm">
+      View Live Demo →
+    </a>
+  </div>
+
+  <!-- WALL CALENDAR (LAST AS REQUESTED) -->
+  <div class="card p-6">
+    <h3 class="font-medium mb-2">
+      Interactive Wall Calendar System
+    </h3>
+    <p class="text-sm text-gray-400 mb-4 leading-relaxed">
+      A production-style interactive wall calendar built with React, TypeScript, and Tailwind CSS featuring date-range selection, themed UI, diary-style notes, and festival highlights.
+      Implemented persistent state using localStorage and sessionStorage with hydration guards and failure-safe parsing.
+      Designed modular architecture with reusable components, animations, and full light/dark theme support across UI.
+    </p>
+    <a href="https://personal-wall-calendar.vercel.app/"
+       target="_blank"
+       class="text-node text-sm">
+      View Live →
+    </a>
+  </div>
+
+</div>
 
 <!-- CONTACT -->
 <section id="contact" class="py-24 px-6">
@@ -251,9 +277,7 @@
   </div>
 </section>
 
-<footer class="py-6 text-center text-xs text-gray-500 border-t border-border">
-  © 2025 Krishna Vamshi Burgula
-</footer>
+
 
 <script>
   AOS.init({
